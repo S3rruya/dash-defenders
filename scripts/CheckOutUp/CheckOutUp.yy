@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "ApplyGravityScript",
+  "name": "CheckOutUp",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

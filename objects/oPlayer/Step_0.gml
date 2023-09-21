@@ -4,7 +4,7 @@ if(CheckOutRight(x, currentXSpeed)){
 	dir = 160;
 	isDashing = false;
 	ResetForce();
-	ApplyGravityScript(true);
+	ApplyGravityForceScript(true);
 }
 if(CheckOutLeft(x, currentXSpeed)){
 	x = 0;
@@ -12,8 +12,17 @@ if(CheckOutLeft(x, currentXSpeed)){
 	dir = 20;
 	isDashing = false;
 	ResetForce();
-	ApplyGravityScript(true);
+	ApplyGravityForceScript(true);
+}
+if(CheckOutUp(x, currentXSpeed)){
+	x = 0;
+	y-=currentYSpeed - currentGravity;
+	dir = 20;
+	isDashing = false;
+	ResetForce();
+	ApplyGravityForceScript(true);
 }
 
+ApplyGravity();
 x+=currentXSpeed;
 y-=currentYSpeed - currentGravity;

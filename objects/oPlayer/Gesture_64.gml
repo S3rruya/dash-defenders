@@ -1,5 +1,5 @@
 if(!isDashing){
 	isDashing = true;
-	ApplyGravityScript(false);
+	ApplyGravityForceScript(false);
 	ApplyForce(dir, 42);
 }

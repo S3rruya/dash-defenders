@@ -31,17 +31,20 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.1.102",
+    "IDEVersion": "2023.800.0.406",
   },
   "resources": [
     {"id":{"name":"CheckOutRight","path":"scripts/CheckOutRight/CheckOutRight.yy",},},
     {"id":{"name":"ResetForce","path":"scripts/ResetForce/ResetForce.yy",},},
+    {"id":{"name":"GetForce","path":"scripts/GetForce/GetForce.yy",},},
+    {"id":{"name":"ApplyGravity","path":"scripts/ApplyGravity/ApplyGravity.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"ApplyForce","path":"scripts/ApplyForce/ApplyForce.yy",},},
     {"id":{"name":"CheckOutLeft","path":"scripts/CheckOutLeft/CheckOutLeft.yy",},},
+    {"id":{"name":"CheckOutUp","path":"scripts/CheckOutUp/CheckOutUp.yy",},},
     {"id":{"name":"oManager","path":"objects/oManager/oManager.yy",},},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},
-    {"id":{"name":"ApplyGravityScript","path":"scripts/ApplyGravityScript/ApplyGravityScript.yy",},},
+    {"id":{"name":"ApplyGravityForceScript","path":"scripts/ApplyGravityForceScript/ApplyGravityForceScript.yy",},},
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
   ],
   "RoomOrderNodes": [
