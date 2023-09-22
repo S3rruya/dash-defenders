@@ -5,6 +5,6 @@ function ApplyForce(){
 	var mudanca_x = argument1 * cos(angulo_em_radianos); // Calcula a mudança em x
 	var mudanca_y = argument1 * sin(angulo_em_radianos); // Calcula a mudança em y
 
-	currentXSpeed += mudanca_x;
-	currentYSpeed += mudanca_y;
+	currentXSpeed = mudanca_x;
+	currentYSpeed = mudanca_y;
 }
