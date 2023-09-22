@@ -23,6 +23,8 @@ initialSkillUsePoints = 1;
 maxSkillUsePoints = initialSkillUsePoints;
 skillUsePoints = initialSkillUsePoints;
 
+closeKillStreak = 0;
+
 gesture_flick_speed(1.0);
 
 enum SKILLS {

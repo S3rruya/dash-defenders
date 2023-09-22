@@ -4,3 +4,5 @@ enum GAME_STATES {
 }
 
 gameState = GAME_STATES.PLAY;
+
+playerScore = 0;
