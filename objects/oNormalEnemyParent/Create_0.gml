@@ -1,6 +1,6 @@
 gravityForce = 3;
 maxGravityForce = 22;
-currentGravity = 0;
+currentGravity = gravityForce;
 perTimeGravityScale = 1.2;
 
 distanceToScore = 112 * 5;

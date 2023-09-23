@@ -1,9 +1,9 @@
-if(!object_exists(manager)) instance_destroy();
-
-y-=currentGravity;
+//if(!object_exists(manager)) instance_destroy();
+ApplyGravity();
+y+=currentGravity;
 
 if(object_exists(player)) {
-	if(player.isJumping){
+	if(player.isJumping  && y > player.y){
 		if(distance_to_object(player) <= distanceToDoubleScore) {
 			player.closeKillStreak++;
 			manager.playerScore += scorePoints + (1*player.closeKillStreak);
