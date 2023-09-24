@@ -8,5 +8,5 @@ if(CanUseSkill()){
 	dir = round(point_direction(_startX, _startY, _endX, _endY));
 	PlayerStandardDash(dir, _force);
 	skillUsePoints--;
-	skillPoints--;
+	//skillPoints--;
 }

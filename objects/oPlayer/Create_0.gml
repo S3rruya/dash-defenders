@@ -3,8 +3,12 @@ isJumping = false;
 x = 0;
 y = room_height/2.3;
 
+initialHP = 3;
+maxHP = initialHP;
+currentHP = maxHP;
+
 gravityForce = 3;
-maxGravityForce = 22;
+maxGravityForce = 36;
 currentGravity = 0;
 perTimeGravityScale = 1.2;
 
@@ -28,5 +32,5 @@ closeKillStreak = 0;
 gesture_flick_speed(1.0);
 
 enum SKILLS {
-	DASH	
+	DASH
 }

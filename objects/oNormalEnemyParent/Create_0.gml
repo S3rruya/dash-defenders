@@ -10,10 +10,11 @@ manager = oManager;
 
 player = oPlayer;
 
+spawner = oSpawner;
+
 scorePoints = 1;
 
-enum TYPES {
-	NORMAL,
-	RESIZED,
-	SPEED,
-}
+enemyType = "standard";
+
+
+

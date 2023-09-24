@@ -5,5 +5,3 @@
 
 // Inherit the parent event
 event_inherited();
-
-type = TYPES.NORMAL;
