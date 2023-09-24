@@ -30,6 +30,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hud","folderPath":"folders/Sprites/Hud.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Sprites/Hud/Player.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -45,6 +47,7 @@
     {"id":{"name":"oNormalEnemy","path":"objects/oNormalEnemy/oNormalEnemy.yy",},},
     {"id":{"name":"GetForce","path":"scripts/GetForce/GetForce.yy",},},
     {"id":{"name":"ApplyGravity","path":"scripts/ApplyGravity/ApplyGravity.yy",},},
+    {"id":{"name":"TempGameOverRoom","path":"rooms/TempGameOverRoom/TempGameOverRoom.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"ApplyForce","path":"scripts/ApplyForce/ApplyForce.yy",},},
@@ -64,6 +67,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
     {"roomId":{"name":"MainMenuRoom","path":"rooms/MainMenuRoom/MainMenuRoom.yy",},},
+    {"roomId":{"name":"TempGameOverRoom","path":"rooms/TempGameOverRoom/TempGameOverRoom.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

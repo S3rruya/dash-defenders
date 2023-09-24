@@ -1,3 +1,5 @@
+size = sprite_width;
+
 isJumping = false;
 
 x = 0;
@@ -16,6 +18,9 @@ initialDir = 20;
 mirrorDir = 160
 dir = initialDir;
 
+initialForce = 36;
+currentForce = initialForce;
+
 currentXSpeed = 0;
 currentYSpeed = 0;
 
@@ -33,4 +38,9 @@ gesture_flick_speed(1.0);
 
 enum SKILLS {
 	DASH
+}
+
+enum STATES {
+	NORMAL,
+	HITINVUNERABLE
 }

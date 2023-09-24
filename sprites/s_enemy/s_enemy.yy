@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "s_enemy",
-  "bbox_bottom": 111,
+  "bbox_bottom": 79,
   "bbox_left": 0,
-  "bbox_right": 111,
+  "bbox_right": 79,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 112,
+  "height": 80,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6207c0b2-dd6e-4a30-834e-7e238e25cdec","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 112,
+  "width": 80,
 }

@@ -3,7 +3,7 @@
 function CheckOutRight(){
 	var _x = argument0;
 	var _speed = argument1;
-	if(_x + _speed + 112 > room_width){
+	if(_x + _speed + sprite_width > room_width){
 		return true	
 	}
 	return false;

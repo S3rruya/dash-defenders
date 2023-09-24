@@ -19,6 +19,8 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Hud","order":2,"path":"folders/Sprites/Hud.yy",},
+    {"name":"Player","order":1,"path":"folders/Sprites/Hud/Player.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"CheckOutRight","order":2,"path":"scripts/CheckOutRight/CheckOutRight.yy",},
@@ -26,6 +28,7 @@
     {"name":"ResetForce","order":4,"path":"scripts/ResetForce/ResetForce.yy",},
     {"name":"GetForce","order":7,"path":"scripts/GetForce/GetForce.yy",},
     {"name":"ApplyGravity","order":5,"path":"scripts/ApplyGravity/ApplyGravity.yy",},
+    {"name":"TempGameOverRoom","order":2,"path":"rooms/TempGameOverRoom/TempGameOverRoom.yy",},
     {"name":"s_enemy","order":1,"path":"sprites/s_enemy/s_enemy.yy",},
     {"name":"ApplyForce","order":1,"path":"scripts/ApplyForce/ApplyForce.yy",},
     {"name":"CheckOutLeft","order":3,"path":"scripts/CheckOutLeft/CheckOutLeft.yy",},
