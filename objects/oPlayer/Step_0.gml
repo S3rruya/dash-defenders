@@ -28,7 +28,7 @@ if(CheckOutUp(y, currentYSpeed)){
 		}
 	}
 	show_debug_message(GetForce(currentXSpeed, currentYSpeed).angle);
-	var _force = GetForce(currentXSpeed, currentYSpeed).force;
+	var _force = GetForce(currentXSpeed, currentYSpeed).force/1.5;
 	ResetForce();
 	ApplyForce(dir,_force);
 }

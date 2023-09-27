@@ -3,6 +3,10 @@ minDelay = game_get_speed(gamespeed_fps) * 1.3;
 delayRedutionRate = 5;
 waveLength = 6;
 
+waveChunks = [[],[],[]];
+chunkTurn = 0;
+enemyPerChunk = 3;
+
 currentWaveSpawn = 0;
 currentIndividualSpawn = 0;
 

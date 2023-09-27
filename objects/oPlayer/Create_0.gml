@@ -14,11 +14,11 @@ maxGravityForce = 22;
 currentGravity = 0;
 perTimeGravityScale = 1.2;
 
-initialDir = 45;
-mirrorDir = 135;
+initialDir = 20;
+mirrorDir = 160;
 dir = initialDir;
 
-initialForce = 26;
+initialForce = 28;
 currentForce = initialForce;
 
 currentXSpeed = 0;

@@ -1,5 +1,19 @@
 var _totalEnemies = array_length(setWave[currentWaveSpawn]);
+var _currentWave = setWave[currentWaveSpawn];
+waveChunks = [[],[],[]];
+chunkTurn = 0;
 
+function ArangeArrays (e, i) {
+	array_push(waveChunk[chunkTurn], e);
+	waveTurn++;
+	if(waveTurn > enemyPerChunk - 1)	
+		waveTurn = enemyPerChunk - 1;
+}
+if(_totalEnemies > 3){
+	var _chunkTurn = 0;
+	array_foreach(_currentWave, ArangeArrays);
+	show_debug_message("Chunk : " + string(waveChunks));
+}
 currentIndividualSpawn++;
 if(currentIndividualSpawn > _totalEnemies-1) {
 	currentIndividualSpawn = 0;
@@ -21,10 +35,10 @@ if(currentWaveSpawn >= waveLength-1){
 	//show_debug_message("Next Wave");
 }else{
 	var _spawnPoint = random_range(66, room_width - 66);
-	var _currentEnemy = setWave[currentWaveSpawn][currentIndividualSpawn];
+	var _currentEnemy = _currentWave[currentIndividualSpawn];
 	var _nextSpawnDelay = waveDelay / _totalEnemies;
-	if(_nextSpawnDelay < minDelay/2){
-		_nextSpawnDelay = minDelay/2.5;	
+	if(_nextSpawnDelay < minDelay/3){
+		_nextSpawnDelay = minDelay/3;	
 	}
 	show_debug_message(_currentEnemy);
 	var inst = instance_create_layer(_spawnPoint, -160,"Instances", oNormalEnemy, _currentEnemy);
