@@ -10,15 +10,15 @@ maxHP = initialHP;
 currentHP = maxHP;
 
 gravityForce = 3;
-maxGravityForce = 36;
+maxGravityForce = 22;
 currentGravity = 0;
 perTimeGravityScale = 1.2;
 
-initialDir = 20;
-mirrorDir = 160
+initialDir = 45;
+mirrorDir = 135;
 dir = initialDir;
 
-initialForce = 36;
+initialForce = 26;
 currentForce = initialForce;
 
 currentXSpeed = 0;

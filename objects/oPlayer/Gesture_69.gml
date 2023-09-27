@@ -4,9 +4,8 @@ if(CanUseSkill()){
 	var _endX = event_data[?"posX"];
 	var _endY = event_data[?"posY"];
 	
-	var _force = GetForce(currentXSpeed, currentYSpeed).force;
 	dir = round(point_direction(_startX, _startY, _endX, _endY));
-	PlayerStandardDash(dir, _force);
+	PlayerStandardDash(dir);
 	skillUsePoints--;
 	//skillPoints--;
 }
