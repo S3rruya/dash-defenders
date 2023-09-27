@@ -12,10 +12,10 @@ currentIndividualSpawn = 0;
 
 alarm[0] = waveDelay/2;
 
-initialThreatGauge = 10;
+initialThreatGauge = 100;
 maxThreatGauge = initialThreatGauge;
 currentThreatGauge = maxThreatGauge;
-maxEnemyPerSpawn = 3;
+maxEnemyPerSpawn = 12;
 weight = 0;
 
 enemyList = [

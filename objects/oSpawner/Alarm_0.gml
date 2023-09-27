@@ -1,5 +1,7 @@
 #region Choose enemy type
 setWave = [];
+waveChunks = [[],[],[]];
+
 var _viableEnemies = array_filter(enemyList,function threatLevelFilter (e,i) { return e.threatLevel <= maxThreatGauge} );
 
 if(array_length(_viableEnemies) > 0) { //Try to choose the enemies
