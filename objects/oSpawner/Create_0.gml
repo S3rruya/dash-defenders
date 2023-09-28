@@ -6,13 +6,15 @@ waveLength = 6;
 waveChunks = [[],[],[]];
 chunkTurn = 0;
 enemyPerChunk = 3;
+waveAranged = false;
 
 currentWaveSpawn = 0;
 currentIndividualSpawn = 0;
 
+
 alarm[0] = waveDelay/2;
 
-initialThreatGauge = 100;
+initialThreatGauge = 50;
 maxThreatGauge = initialThreatGauge;
 currentThreatGauge = maxThreatGauge;
 maxEnemyPerSpawn = 12;

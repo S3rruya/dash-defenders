@@ -12,12 +12,15 @@ if(_totalEnemies > 3){
 	array_foreach(_currentWave, ArangeArrays);
 	show_debug_message("Chunk : " + string(waveChunks));
 	
-	currentIndividualSpawn++;
+	/*currentIndividualSpawn++;
 	if(currentIndividualSpawn > 2) {
 		currentIndividualSpawn = 0;
 		currentWaveSpawn++;
+		waveAranged = false;
 	}
-	
+	if(!waveAranged){
+		
+	}*/
 	if(currentWaveSpawn >= waveLength-1){
 		currentWaveSpawn = 0;
 		waveDelay -= delayRedutionRate * (oManager.playerScore % 10)
@@ -28,8 +31,8 @@ if(_totalEnemies > 3){
 	}else {
 		function Spawn (e, i) {
 			var _spawnPoint = random_range(66, room_width - 66);
-			var _currentEnemy = _currentWave[currentIndividualSpawn];
-			var inst = instance_create_layer(_spawnPoint, -160,"Instances", oNormalEnemy, _currentEnemy);
+			var inst = instance_create_layer(_spawnPoint, -160,"Instances", oNormalEnemy, e);
+			show_debug_message("Spawned : " + string(e));
 		}
 		
 		array_foreach(waveChunks[currentIndividualSpawn], Spawn)
@@ -38,7 +41,7 @@ if(_totalEnemies > 3){
 			_nextSpawnDelay = minDelay/3;	
 		}
 		//show_debug_message(_currentEnemy);e
-		//show_debug_message("Next Enemy");
+		show_debug_message("Next Enemies ");
 		alarm[1] = _nextSpawnDelay;	
 	}
 }else{
