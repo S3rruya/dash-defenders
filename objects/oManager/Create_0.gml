@@ -1,4 +1,6 @@
 enum GAME_STATES {
+	MENU,
+	INTRODUCTION,
 	PAUSED,
 	PLAY
 }
@@ -15,4 +17,8 @@ playerHpX = 32;
 playerHpY = 32;
 playerHpSize = 64;
 playerHpOffset = 32;
+
+gameSpeed = 1;
+
+spawnerSpeedCompensate = 0;
 
