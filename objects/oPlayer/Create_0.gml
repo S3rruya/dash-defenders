@@ -33,6 +33,12 @@ maxSkillUsePoints = initialSkillUsePoints;
 skillUsePoints = initialSkillUsePoints;
 
 closeKillStreak = 0;
+comboStartY = 0;
+comboStartX = 0;
+comboDistance = size*2;
+comboHit = true;
+
+blink = false;
 
 gesture_flick_speed(1.0);
 
@@ -42,5 +48,8 @@ enum SKILLS {
 
 enum STATES {
 	NORMAL,
+	COMBOHIT,
 	HITINVUNERABLE
 }
+
+state = STATES.NORMAL;

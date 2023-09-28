@@ -1,0 +1,1 @@
+oManager.gameSpeed = 1;
