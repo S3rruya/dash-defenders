@@ -22,12 +22,12 @@
 		dir = 360 - GetForce(currentXSpeed, currentYSpeed).angle;
 		if(dir >= 260 && dir <= 280){
 			if(dir >= 270){
-				dir = 290;	
+				dir = 310;	
 			}else{
-				dir = 250;	
+				dir = 230;	
 			}
 		}
-		var _force = GetForce(currentXSpeed, currentYSpeed).force/1.5;
+		var _force = GetForce(currentXSpeed, currentYSpeed).force;
 		ResetForce();
 		ApplyForce(dir,_force);
 	}

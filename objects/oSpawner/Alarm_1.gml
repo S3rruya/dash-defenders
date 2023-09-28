@@ -54,18 +54,6 @@
 			waveChunks = [[],[],[]];
 			currentWaveSpawn++;
 		}
-<<<<<<< HEAD
-		//show_debug_message(_currentEnemy);e
-		show_debug_message("Next Enemies ");
-		alarm[1] = _nextSpawnDelay;	
-	}
-}else{
-	currentIndividualSpawn++;
-	if(currentIndividualSpawn > _totalEnemies-1) {
-		currentIndividualSpawn = 0;
-		currentWaveSpawn++;
-=======
->>>>>>> c3acdd45db63ecfc2797121160ec7e19972ed7cd
 	}
 
 

@@ -13,13 +13,9 @@ if(object_exists(player)) {
 				var _angle = GetForce(currentXSpeed, currentYSpeed).angle;
 				var _force = GetForce(currentXSpeed, currentYSpeed).force;
 				ResetForce();
-				if(_angle < 90 || _angle > 270){
-					ApplyForce(70, _force);
-				}else{
-					ApplyForce(110, _force);
-				}
+				ApplyForce(_angle, _force);
 				comboHit = true;
-				instance_create_layer(other.x+(other.size/2),other.y-other.size,"instances",oHitEffect);
+				instance_create_layer(other.x+(other.size/2),other.y-other.size,"effects",oHitEffect);
 			}
 			instance_destroy();
 		}
