@@ -3,6 +3,7 @@
 		y-=currentYSpeed - currentGravity;
 		dir = mirrorDir;
 		isJumping = false;
+		isDashing = false;
 		ResetForce();
 		ApplyGravityForceScript(true);
 		ResetSkillUsage();
@@ -12,6 +13,7 @@
 		y-=currentYSpeed - currentGravity;
 		dir = initialDir;
 		isJumping = false;
+		isDashing = false;
 		ResetForce();
 		ApplyGravityForceScript(true);
 		ResetSkillUsage();
@@ -27,10 +29,27 @@
 				dir = 230;	
 			}
 		}
+		isDashing = false;
 		var _force = GetForce(currentXSpeed, currentYSpeed).force;
 		ResetForce();
 		ApplyForce(dir,_force);
 	}
+
 ApplyGravity();
+
 x+=currentXSpeed * oManager.gameSpeed;
-y-=(currentYSpeed - currentGravity) * oManager.gameSpeed;
+y+=(currentYSpeed) * oManager.gameSpeed;
+var dragCoefficient = 0.05;
+var dragX = -dragCoefficient * sign(currentXSpeed);
+//currentXSpeed += dragX;
+if(!isDashing)currentYSpeed += currentGravity;
+
+if(!isJumping){
+	if(currentYSpeed >= maxWallGravityForce){
+			currentYSpeed = maxWallGravityForce;
+	}
+}else{
+	if(currentYSpeed >= maxGravityForce){
+			currentYSpeed = maxGravityForce;
+	}	
+}

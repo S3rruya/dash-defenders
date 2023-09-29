@@ -6,4 +6,5 @@ function PlayerStandardDash(dir){
 	state = STATES.NORMAL;
 	ResetForce();
 	ApplyForce(dir, _force);
+	isDashing = true;
 }

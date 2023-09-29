@@ -1,6 +1,7 @@
 size = sprite_width;
 
 isJumping = false;
+isDashing = false;
 
 x = 0;
 y = room_height/2.3;
@@ -9,17 +10,19 @@ initialHP = 3;
 maxHP = initialHP;
 currentHP = maxHP;
 
-gravityForce = 3;
-maxGravityForce = 22;
-currentGravity = 0;
-perTimeGravityScale = 1.2;
-
-initialDir = 20;
-mirrorDir = 160;
+initialDir = 35;
+mirrorDir = 145;
 dir = initialDir;
 
 initialForce = 28;
+dashForce = 16;
 currentForce = initialForce;
+
+gravityForce = 0.2;
+maxGravityForce = initialForce + dashForce + 12;
+maxWallGravityForce = 20;
+currentGravity = 0;
+perTimeGravityScale = 1.05;
 
 currentXSpeed = 0;
 currentYSpeed = 0;
