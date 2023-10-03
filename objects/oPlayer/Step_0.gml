@@ -1,24 +1,24 @@
-	if(CheckOutRight(x, currentXSpeed)){
+if(CheckOutRight(x, currentXSpeed)){
 		x = room_width - size;
-		y-=currentYSpeed - currentGravity;
+		y-=currentYSpeed;
 		dir = mirrorDir;
 		isJumping = false;
 		isDashing = false;
-		ResetForce();
+		ResetForceWall();
 		ApplyGravityForceScript(true);
 		ResetSkillUsage();
-	}
-	if(CheckOutLeft(x, currentXSpeed)){
-		x = 0;
-		y-=currentYSpeed - currentGravity;
+}
+if(CheckOutLeft(x, currentXSpeed)){
+		x=0;
+		y-=currentYSpeed;
 		dir = initialDir;
 		isJumping = false;
 		isDashing = false;
-		ResetForce();
+		ResetForceWall();
 		ApplyGravityForceScript(true);
 		ResetSkillUsage();
-	}
-	if(CheckOutUp(y, currentYSpeed)){
+}
+if(CheckOutUp(y, currentYSpeed)){
 		y=0;
 		x+=currentXSpeed*oManager.gameSpeed;
 		dir = 360 - GetForce(currentXSpeed, currentYSpeed).angle;
@@ -33,7 +33,7 @@
 		var _force = GetForce(currentXSpeed, currentYSpeed).force;
 		ResetForce();
 		ApplyForce(dir,_force);
-	}
+}
 
 ApplyGravity();
 
@@ -44,7 +44,7 @@ var dragX = -dragCoefficient * sign(currentXSpeed);
 //currentXSpeed += dragX;
 if(!isDashing)currentYSpeed += currentGravity;
 
-if(!isJumping){
+if(!isJumping){ 
 	if(currentYSpeed >= maxWallGravityForce){
 			currentYSpeed = maxWallGravityForce;
 	}

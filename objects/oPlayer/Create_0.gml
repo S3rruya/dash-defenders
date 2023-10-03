@@ -14,7 +14,7 @@ initialDir = 35;
 mirrorDir = 145;
 dir = initialDir;
 
-initialForce = 28;
+initialForce = 30;
 dashForce = 16;
 currentForce = initialForce;
 

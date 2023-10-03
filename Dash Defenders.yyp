@@ -52,6 +52,7 @@
     {"id":{"name":"TempGameOverRoom","path":"rooms/TempGameOverRoom/TempGameOverRoom.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"ResetForceWall","path":"scripts/ResetForceWall/ResetForceWall.yy",},},
     {"id":{"name":"ApplyForce","path":"scripts/ApplyForce/ApplyForce.yy",},},
     {"id":{"name":"CheckOutLeft","path":"scripts/CheckOutLeft/CheckOutLeft.yy",},},
     {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},},

@@ -31,6 +31,7 @@
     {"name":"ApplyGravity","order":5,"path":"scripts/ApplyGravity/ApplyGravity.yy",},
     {"name":"TempGameOverRoom","order":2,"path":"rooms/TempGameOverRoom/TempGameOverRoom.yy",},
     {"name":"s_enemy","order":1,"path":"sprites/s_enemy/s_enemy.yy",},
+    {"name":"ResetForceWall","order":10,"path":"scripts/ResetForceWall/ResetForceWall.yy",},
     {"name":"ApplyForce","order":1,"path":"scripts/ApplyForce/ApplyForce.yy",},
     {"name":"CheckOutLeft","order":3,"path":"scripts/CheckOutLeft/CheckOutLeft.yy",},
     {"name":"oEnemyParent","order":1,"path":"objects/oEnemyParent/oEnemyParent.yy",},
