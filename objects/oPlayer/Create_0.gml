@@ -55,4 +55,58 @@ enum STATES {
 	HITINVUNERABLE
 }
 
-state = STATES.NORMAL;
+normalStepState = function () {
+	if(CheckOutRight(x, currentXSpeed)){
+		x = room_width - size;
+		y-=currentYSpeed;
+		dir = mirrorDir;
+		isJumping = false;
+		isDashing = false;
+		ResetForceWall();
+		ApplyGravityForceScript(true);
+		ResetSkillUsage();
+	}
+	if(CheckOutLeft(x, currentXSpeed)){
+		x=0;
+		y-=currentYSpeed;
+		dir = initialDir;
+		isJumping = false;
+		isDashing = false;
+		ResetForceWall();
+		ApplyGravityForceScript(true);
+		ResetSkillUsage();
+	}
+	if(CheckOutUp(y, currentYSpeed)){
+		y=0;
+		x+=currentXSpeed*oManager.gameSpeed;
+		var _force = GetForce(currentXSpeed, currentYSpeed).force*0.9;
+		dir = 360 - GetForce(currentXSpeed, currentYSpeed).angle;
+		isDashing = false;
+		ResetForce();
+		ApplyForce(dir,_force);
+	}
+
+	ApplyGravity();
+
+	x+=currentXSpeed * oManager.gameSpeed;
+	y+=(currentYSpeed) * oManager.gameSpeed;
+	var dragCoefficient = 0.05;
+	var dragX = -dragCoefficient * sign(currentXSpeed);
+	//currentXSpeed += dragX;
+	if(!isDashing)currentYSpeed += currentGravity;
+
+	if(!isJumping){ 
+		if(currentYSpeed >= maxWallGravityForce){
+				currentYSpeed = maxWallGravityForce;
+		}
+	}else{
+		if(currentYSpeed >= maxGravityForce){
+				currentYSpeed = maxGravityForce;
+		}	
+	}
+}
+	
+fallRecoverStepState = function () {
+	
+}
+stepState = normalStepState;
